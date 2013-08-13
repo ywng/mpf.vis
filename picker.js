@@ -96,10 +96,12 @@
 				});
 			
 			valueChange.select("text").transition()//update % value change label
-				.text( function (d) { 
-					if(currIndex-1<0)
-					    return "";
-					var percentChange=(d.priceList[d.priceList.length-1].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
+				.text( function (d) {
+					var percentChange;				
+					if(currIndex==d.priceList.length-1)
+						percentChange=(d.priceList[currIndex].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
+					else
+					    percentChange=(d.priceList[d.priceList.length-1].price-d.priceList[currIndex].price)/d.priceList[currIndex].price*100;
 					if(percentChange<0){
 						return "(-"+percentChange.toFixed(2)+"%)" 
 					}else{
@@ -107,9 +109,11 @@
 					}
 				})
 				.attr("fill", function (d) {
-					if(currIndex-1<0)
-					   return "black";
-					var percentChange=(d.priceList[d.priceList.length-1].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
+					var percentChange;				
+					if(currIndex==d.priceList.length-1)
+						percentChange=(d.priceList[currIndex].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
+					else
+					    percentChange=(d.priceList[d.priceList.length-1].price-d.priceList[currIndex].price)/d.priceList[currIndex].price*100;
 					if(percentChange<0){
 						return "red" 
 					}else{
