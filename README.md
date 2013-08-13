@@ -14,6 +14,8 @@ It allows quick interaction with data.
 The system is developed with mainly D3.js, manipulating SVG.
 Have a look at it: http://mpf.vis.ywng.cloudbees.net/
 
+![alt tag](http://url/to/img.png)
+
 Design Characteristics:
 
 1. Allow quick selection of the funds, and add it into the plot (click the color rect next to fund name)
