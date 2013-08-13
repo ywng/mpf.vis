@@ -14,7 +14,7 @@ It allows quick interaction with data.
 The system is developed with mainly D3.js, manipulating SVG.
 Have a look at it: http://mpf.vis.ywng.cloudbees.net/
 
-![alt tag](http://url/to/img.png)
+![alt tag](https://raw.github.com/ywng/mpf_vis/master/PrintScreen.png)
 
 Design Characteristics:
 
@@ -28,7 +28,7 @@ Design Characteristics:
 
 5. Show price percentage changed and highlighted accordingly (red: decrease; black: increase)
 
-6. Quick view of return of any length of time interval dated back (if no mouse move over the graph, then 1 day return / change of price will be shown, if mouse over the curve, then the return from that date (hover line) to present is shown)
+6. Quick view of return of any length of time interval dated back (if no mouse move over the graph, then 1 day return / change of price will be shown, if mouse over the curve, then the return from that date (hover line) to present is shown)(E.g. in the screen shoot, the % change is the return from Apr 1, 2013 to present)
 
 For the price data of those MPF fund, I scrapped it from Bloomberg webpage, by a servelet (see further the code on my github:https://github.com/ywng/MPF_Portal )I made, which is then trigger by an online scheduler server (cron scheduler: https://mywebcron-com.loopiasecure.com/members.php?Jobs). So, the price is 
 extracted daily and updated into my database (free host: http://www.db4free.net/). After extracting the data, I also made an API url for external requesting of data.
