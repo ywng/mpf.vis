@@ -99,7 +99,7 @@
 				.text( function (d) { 
 					if(currIndex-1<0)
 					    return "";
-					var percentChange=(d.priceList[currIndex].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
+					var percentChange=(d.priceList[d.priceList.length-1].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
 					if(percentChange<0){
 						return "(-"+percentChange.toFixed(2)+"%)" 
 					}else{
@@ -109,7 +109,7 @@
 				.attr("fill", function (d) {
 					if(currIndex-1<0)
 					   return "black";
-					var percentChange=(d.priceList[currIndex].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
+					var percentChange=(d.priceList[d.priceList.length-1].price-d.priceList[currIndex-1].price)/d.priceList[currIndex-1].price*100;
 					if(percentChange<0){
 						return "red" 
 					}else{
