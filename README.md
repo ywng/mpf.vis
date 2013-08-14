@@ -22,7 +22,7 @@ Design Characteristics:
 
 2. Auto adjust of y-axis according to the selected funds
 
-3. Allow traversal of time line quickly, quick selection of time interval
+3. Allow traversal of time line quickly, quick selection of time interval (select over the yellow slider bar at the bottom)
 
 4. Has a picker line to view the detailed price and date
 
