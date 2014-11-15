@@ -1,6 +1,6 @@
 MPF Vis
 =======
-http://mpf.vis.ywng.cloudbees.net/
+http://ywng-d3apps.rhcloud.com/mpfvis/
 
 Visualization of Hang Seng Bank MPF Scheme (Super Trust Plus)
 
