@@ -1,6 +1,6 @@
 MPF Vis
 =======
-http://ywng-d3apps.rhcloud.com/mpfvis/
+http://ywng.github.io/mpf_vis/
 
 Visualization of Hang Seng Bank MPF Scheme (Super Trust Plus)
 
@@ -8,11 +8,10 @@ Visualization of Hang Seng Bank MPF Scheme (Super Trust Plus)
 It aims to provide a good visulization of time series data. 
 The MPF Funds should be conveniently viewed, retrived, compared(may be). 
 So, here I proposed a multi-series line plot for 
-visulizing a set of MPF funds (Hang Seng Bank Super Trust Plus Scheme).
+visulizing a set of MPF funds (Hang Seng Bank Super Trust Plus Scheme). Originally, the price data was fetched automatically every day. I changed to load from static file data.json so avoid web hosting need. 
 
 It allows quick interaction with data.
 The system is developed with mainly D3.js, manipulating SVG.
-Have a look at it: http://mpf.vis.ywng.cloudbees.net/
 
 ![alt tag](https://raw.github.com/ywng/mpf_vis/master/PrintScreen.png)
 
