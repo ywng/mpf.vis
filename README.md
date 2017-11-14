@@ -1,6 +1,6 @@
 MPF Vis
 =======
-http://ywng.github.io/mpf_vis/
+http://ywng.github.io/mpf.vis
 
 Visualization of Hang Seng Bank MPF Scheme (Super Trust Plus)
 
